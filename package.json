@@ -1,0 +1,13 @@
+{
+  "name": "poke-logger",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "gitHead": "a4929da0d87d38ba1b71589bc8721d76b1fa897a"
+}
