@@ -2,11 +2,9 @@ cluster = require "cluster"
 http = require "http"
 numCPUs = (require "os").cpus().length
 
-redis = require "redis"
 qs = require 'qs'
 
 mongo = require "mongo"
-rclient = redis.createClient null
 console.log "start"
 
 store = "sssstore"
