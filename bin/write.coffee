@@ -27,4 +27,4 @@ else
         b:1
         c:2
     l.save e
-  setInterval fn, 50
+  setInterval fn, 10
