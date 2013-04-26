@@ -2,8 +2,7 @@ cluster = require "cluster"
 http = require "http"
 numCPUs = (require "os").cpus().length
 
-redis = require "redis"
-rclient = redis.createClient null
+rclient = require('redis-url').connect("redis://rg:cedfe4f4028846458d4f808d57e31e1a@bright-daffodil-533.redisgreen.net:11042/");
 console.log "start"
 
 store = "sssstore"

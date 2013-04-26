@@ -2,12 +2,11 @@ cluster = require "cluster"
 numCPUs = (require "os").cpus().length
 
 qs = require 'qs'
-redis = require "redis"
 
 mongo = require "mongo"
 
 
-rclient = redis.createClient null
+rclient = require('redis-url').connect("redis://rg:cedfe4f4028846458d4f808d57e31e1a@bright-daffodil-533.redisgreen.net:11042/");
 console.log "start"
 
 store = "sssstore"
@@ -19,7 +18,6 @@ getval = (done) ->
       l = new mongo.log qs.parse result
       l.save (err,r) ->
         console.log "e", err if err
-      console.log "ok"
       setTimeout getval, 0
     else
       setTimeout getval, 1000
