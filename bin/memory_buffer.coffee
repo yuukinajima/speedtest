@@ -41,4 +41,4 @@ else
     [buffer,_buffer] = [_buffer,buffer]
     mongo.log.create _buffer, (err, args...)->
       console.log "e", err if err
-  ,5000
+  ,500
